@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Ubarnist";
+  src: url("fonts/Urbanist/Urbanist-VariableFont_wght.ttf")
+    format("woff2-variations");
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Ubarnist", "Helvetica Neue", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* Shared */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubarnist";
+  font-weight: 400;
+}
+.w-100 {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid black;
+  min-width: 150px;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Ubarnist";
+  cursor: pointer;
+}
+.btn-round {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: grid;
+  place-content: center;
+  color: black;
+}
+.btn-light {
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
+  transition: all 0.5s ease;
+}
+.btn-light:hover {
+  border: 2px solid rgb(0, 74, 74);
+  background-color: #008080;
+  color: white;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+/* Components Base */
+.navbar {
+  height: 60px;
+  background-color: rgba(245, 255, 252, 0.928);
+}
+.search {
+  border: 2px solid rgb(0, 105, 105);
+  padding: 5px;
+  border-radius: 25px;
+}
+.search > .search-input {
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  width: 300px;
+}
+
+.logo {
+  padding-left: 10px;
+}
+.lang {
+  cursor: pointer;
+  padding-right: 10px;
+}
+.slider {
+  color: #ff9090;
+}
+.slide-image {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+.slide-text {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  padding: 150px;
+}
+.image-container {
+  border: 20px solid cornsilk;
+  padding: 25px;
+}
+.image-container > img {
+  /* width: 100%; */
+  height: 250px;
+  object-fit: cover;
+}
+.products {
+  display: flex;
+}
+.product-image-container {
+  background-color: aliceblue;
+  position: relative;
+  height: 500px;
+  display: grid;
+  place-content: center;
+  padding: 30px;
+}
+
+.product-actions {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.354);
+  display: grid;
+  place-content: center;
+  transition: all 1s ease;
+}
+.product-actions:hover {
+  opacity: 1;
+}
+.new-letter-input {
+  width: 450px;
+  border: 1px solid grey;
+  border-radius: 48px;
+  padding: 0 60px 0 15px;
+  height: 49px;
+}
+.add-item {
+  display: flex;
+}
+.add-item > button {
+  background-color: transparent;
+  border-radius: 1px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.add-item > input {
+  border: 1px solid black;
+  width: 40px;
+  text-align: center;
+  /* border-radius: 1px; */
+}
